@@ -2,3 +2,73 @@ body{
 font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif;
 }
+
+:root{
+    --font-text: Roboto;
+    --background-color:#FFFFFF; ;
+    --section-jobs:  #F5F5F5;
+    --section-team:  #F5F4FA; ;
+    --title-text: #212121 ;
+    --text-secondary: #757575; 
+    --link-buttom-color: #2196F3;
+}
+    
+
+/*-----------------------Header--------------------------------*/
+.logo-text{
+color: #000000;
+
+}
+.logo{
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+/* identical to box height */
+text-decoration: none;
+letter-spacing: 0.03em;
+color: var(--link-buttom-color)
+}
+.header-list{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height:  1.14;
+letter-spacing: 0.02em;
+ text-decoration: none;
+}
+.header-list :hover,
+.header-list :focus{
+    color: var(--link-buttom-color);
+}
+
+.header-mail, .header-tell{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--text-secondary)
+
+}
+.header-contact{
+   
+}
+.header-contact :hover{
+    color: var(--link-buttom-color);
+}
+.link{
+     list-style-type: none;
+}
+.list{
+    list-style: none;
+}
+
+/*-----------------------Main----------------------------------*/
+
+/*-----------------------Footer---------------------------------*/
+
+
