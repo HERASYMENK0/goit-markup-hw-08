@@ -54,6 +54,7 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
+color: var(--title-text)
 }
 .header-mail,.header-tell{
 font-weight: 500;
@@ -183,12 +184,13 @@ background: #2F303A;
 
 }
 .addres-page {
-        font-size: 14px;
+ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color:var(--background-color)
 }
 .addres-link {
+ font-style: normal;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
@@ -210,6 +212,7 @@ color: var(--background-color);
 background-color: var(--link-buttom-color);
 }
 .filtr-btn{
+    font-family: 'Roboto', sans-serif; 
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
