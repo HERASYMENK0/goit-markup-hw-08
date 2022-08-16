@@ -79,7 +79,30 @@ letter-spacing: 0.02em;
 
 color: var(--text-secondary)
 }
-
+.header-list{
+    display: flex;
+}
+.header-contact{
+    display: flex;
+    margin-left: 344px;
+}
+.item-nav + .item-nav,.contact-item+.contact-item{
+    margin-left: 50px;
+    
+}
+.header-nav{
+    margin-left: 93px;
+}
+.item-nav, .contact-item{
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: aqua;
+}
+.main-nav{
+    display: flex;
+    align-items: center;
+}
 /*-----------------------Main----------------------------------*/
 .section-hero {
     background-color:#2F303A;;
