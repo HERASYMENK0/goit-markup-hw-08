@@ -1,7 +1,6 @@
 body{
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif; 
-    
     color:var(--title-text) ;
 }
 
@@ -16,9 +15,10 @@ body{
     --side-distance: 30px;
     --top-distance: 94px;
 }
- p,  h1, h2, h3, h4, h5, h6{
+
+ p, h1, h2, h3, h4, h5, h6{
         margin: 0;
-    }
+}
 ul{
     margin: 0;
     padding: 0;
@@ -31,11 +31,15 @@ img{
 button{
     cursor: pointer;
 }
+div{
+    margin: 0;
+}
 .container{
-    max-width: 1200px;
+    margin: 0 auto;
+    width: 1200px ;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;
+   
     outline: 1px solid red;
 }
 .section{
@@ -107,15 +111,22 @@ color: var(--text-secondary)
 }
 .item-nav, .contact-item{
     display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .main-nav{
     display: flex;
     align-items: center;
 }
 /*-----------------------Main----------------------------------*/
-
+.section-hero {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#2F303A;
+  
+}
 .hero-title {
     
 font-weight: 900;
@@ -127,13 +138,7 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--background-color);
 }
-.section-hero {
-    background-color:#2F303A;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+
 .hero-btn {
 
 font-weight: 700;
@@ -202,7 +207,8 @@ color: var(--title-text)
     padding-top: 50px ;
 }
 /*--------------наша команда---------*/
-.comand {
+.card-content{
+    padding: 20px 24px;
 }
 .comand-card{
     text-align: center;
@@ -322,10 +328,6 @@ color: transparent;
 .portfolio-item{
   border: 1px solid #000000;
  
-}
-
-.card-content{
-    padding: 20px 24px;
 }
 .portfolio-title {
 font-weight: 700;
