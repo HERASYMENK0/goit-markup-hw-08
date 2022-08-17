@@ -12,82 +12,109 @@
     <title>WebStudio</title>
 </head>
 <body>
-     <header class="header">
-      <nav class="header-nav ">
+    
+   <header class="header section">
+      
+      <div class="container main-nav">
         <a href="#" class="logo">Web<span class="logo-text">Studio</span></a>
+      <nav class="header-nav">
         <ul class="header-list list">
-          <li ><a href="./index.html" class="header-link link">Студия</a></li>
-          <li ><a href="./portfolio.html" class="header-link link">Портфолио</a></li>
-          <li ><a href="" class="header-link link">Контакты</a></li>
+          <li class="item-nav"><a href="./index.html" class="header-link link">Студия</a></li>
+          <li class="item-nav"><a href="./portfolio.html" class="header-link link">Портфолио</a></li>
+          <li class="item-nav"><a href="" class="header-link link">Контакты</a></li>
         </ul>
       </nav>
       <ul class="header-contact list" >
-        <li ><a href="Mailto:info@devstudio.com" class="header-mail link">info@devstudio.com</a></li>
-        <li ><a href="Tel:+380961111111" class="header-tell link">+38 096 111 11 11</a></li>
+        <li class="contact-item"><a href="Mailto:info@devstudio.com" class="header-mail link">info@devstudio.com</a></li>
+        <li class="contact-item"><a href="Tel:+380961111111" class="header-tell link">+38 096 111 11 11</a></li>
       </ul>
+      </div>
+     
     </header>
       <main>
-        <section>
-           <div>
-          <ul class="filtr list">
-            <li><button type="button" class="filtr-btn">Все</button></li>
-            <li><button type="button" class="filtr-btn">Веб-сайти</button></li>
-            <li><button type="button" class="filtr-btn">Додатки</button></li>
-            <li><button type="button" class="filtr-btn">Дизайн</button></li>
-            <li><button type="button" class="filtr-btn">Маркетинг</button></li>
+        <section class="portfolio-box section">
+           <div class="container">
+             <div>
+          <ul class="filtr-list list">
+            <li class="btn"><button type="button" class="filtr-btn">Все</button></li>
+            <li class="btn"><button type="button" class="filtr-btn">Веб-сайти</button></li>
+            <li class="btn"><button type="button" class="filtr-btn">Додатки</button></li>
+            <li class="btn"><button type="button" class="filtr-btn">Дизайн</button></li>
+            <li class="btn"><button type="button" class="filtr-btn">Маркетинг</button></li>
           </ul>
-        </div>
+             </div>
             <h1 class="portfolio">portfolio</h1>
             <ul class="portfolio-list list">
-                <li class="portfolio-item">
+                <li class="portfolio-item box-card">
                     <img src="./images/pf-tehno.jpg" alt="website"  width="370" height="294">
+                    <div class="card-content">
                     <h2 class="portfolio-title">Технокряк</h2>
                     <p class="portfolio-text">Веб-сайт</p>
+                    </div>
                 </li>
-                <li class="portfolio-item">
+                <li class="portfolio-item box-card">
                     <img src="./images/pf-poster.jpg" alt="poster" width="370" height="294">
-                    <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
+                    <div class="card-content">
+                      <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
                     <p class="portfolio-text">Дизайн</p>
+                  </div>
                 </li>
                 <li class="portfolio-item">
                     <img src="./images/pf-restoran.jpg" alt="logotype" width="370" height="294">
-                    <h2 class="portfolio-title">Ресторан Seafood</h2>
+                    <div class="card-content">
+                      <h2 class="portfolio-title">Ресторан Seafood</h2>
                     <p class="portfolio-text">Додаток</p>
+                    </div>
                 </li>
                 <li class="portfolio-item">
                     <img src="./images/pf-prime.jpg" alt="headphone" width="370" height="294">
-                    <h2 class="portfolio-title">Проєкт Prime</h2>
+                    <div class="card-content">
+                     <h2 class="portfolio-title">Проєкт Prime</h2>
                     <p class="portfolio-text">Маркетинг</p>
+                    </div>
                 </li>
-                <li class="portfolio-item">
+                <li class="portfolio-item box-card">
                     <img src="./images/pf-boxes.jpg" alt="boxes" width="370" height="294">
-                    <h2 class="portfolio-title">Проєкт Boxes</h2>
+                    <div class="card-content">
+                      <h2 class="portfolio-title">Проєкт Boxes</h2>
                     <p class="portfolio-text">Додаток</p>
+                  </div>
                 </li>
-                <li class="portfolio-item">
+                <li class="portfolio-item box-card">
                     <img src="./images/pf-borders.jpg" alt="borders" width="370" height="294">
-                    <h2 class="portfolio-title">Inspiration has no Borders</h2>
+                    <div class="card-content">
+                        <h2 class="portfolio-title">Inspiration has no Borders</h2>
                     <p class="portfolio-text">Веб-сайт</p>
+                    </div>
                 </li>
-                <li class="portfolio-item">
+                <li class="portfolio-item box-card">
                     <img src="./images/pf-edition.jpg" alt="edition" width="370" height="294">
-                    <h2 class="portfolio-title">Видання Limited Edition</h2>
+                    <div class="card-content">
+                            <h2 class="portfolio-title">Видання Limited Edition</h2>
                     <p>Дизайн</p>
+                    </div>
+                    
                 </li>
-                <li>
+                <li class="portfolio-item box-card">
                     <img src="./images/pf-lab.jpg" alt="tag" width="370" height="294">
-                    <h2 class="portfolio-title">Проект LAB</h2>
+                    <div class="card-content">
+                      <h2 class="portfolio-title">Проект LAB</h2>
                     <p class="portfolio-text">Маркетинг</p>
+                    </div>
                 </li>
-                <li class="portfolio-item">
+                <li class="portfolio-item box-card">
                     <img src="./images/pf-business.jpg" alt="business" width="370" height="294">
-                    <h2 class="portfolio-title">Growing Business</h2>
+                    <div class="card-content">
+                      <h2 class="portfolio-title">Growing Business</h2>
                     <p class="portfolio-text">Додаток</p>
+                    </div>
                 </li>
             </ul>
+            </div>
         </section>
       </main>
-        <footer class="footer">
+        <footer class="footer section">
+          <div class="container footer-box">
        <a href="#" class="logo">Web<span class="logo-footer">Studio</span></a>
       <address class="addres">
         <p class="addres-page">г. Киев, пр-т Леси Украинки, 26</p>
@@ -95,6 +122,6 @@
         <a href="Tel:+380961111111" class="addres-link link">+38 096 111 11 11</a>
       </address>
     </footer>
-    
+    </div>
 </body>
 </html>

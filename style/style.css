@@ -13,6 +13,8 @@ body{
     --title-text: #212121 ;
     --text-secondary: #757575; 
     --link-buttom-color: #2196F3;
+    --side-distance: 30px;
+    --top-distance: 94px;
 }
  p,  h1, h2, h3, h4, h5, h6{
         margin: 0;
@@ -21,16 +23,26 @@ ul{
     margin: 0;
     padding: 0;
 } 
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 button{
     cursor: pointer;
 }
 .container{
-    width: 1200px;
+    max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 2px solid red;
+    outline: 1px solid red;
 }
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 /*-----------------------Header--------------------------------*/
 
 .logo-text{
@@ -84,10 +96,10 @@ color: var(--text-secondary)
 }
 .header-contact{
     display: flex;
-    margin-left: 344px;
+    margin-left: 340px;
 }
-.item-nav + .item-nav,.contact-item+.contact-item{
-    margin-left: 50px;
+.item-nav + .item-nav, .contact-item +.contact-item{
+    margin-left: var(--side-distance);
     
 }
 .header-nav{
@@ -97,24 +109,30 @@ color: var(--text-secondary)
     display: block;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: aqua;
 }
 .main-nav{
     display: flex;
     align-items: center;
 }
 /*-----------------------Main----------------------------------*/
-.section-hero {
-    background-color:#2F303A;;
-}
+
 .hero-title {
+    
 font-weight: 900;
 font-size: 44px;
+max-width: 696px;
 line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--background-color);
+}
+.section-hero {
+    background-color:#2F303A;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .hero-btn {
 
@@ -130,15 +148,22 @@ cursor: pointer;
 }
 /*---------------особенности----------*/
 .benefits {
+   
 }
 .benefits-title {
+    color: transparent;
 }
 .benefits-list {
+    display: flex;
+    
 }
-.benefits-item {
+.benefits-item + .benefits-item {
+margin-left: var(--side-distance);
 }
 .benefits-caption {
-    font-weight: 700;
+max-width: 270px;
+padding-bottom: 10px;
+font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
@@ -169,13 +194,22 @@ letter-spacing: 0.03em;
 color: var(--title-text)
 }
 .gellery-list {
+    display: flex;
+    justify-content: space-between;
+
 }
-.gellery-item {
+.gellery-item{
+    padding-top: 50px ;
 }
 /*--------------наша команда---------*/
 .comand {
 }
+.comand-card{
+    text-align: center;
+    padding: 30px;
+}
 .comand-title {
+    padding-top: var(--top-distance);
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
@@ -185,12 +219,16 @@ letter-spacing: 0.03em;
 color: var(--title-text)
 }
 .comand-list {
-}
-.list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 94px;
 }
 .comand-item {
+
 }
 .comand-name {
+    margin: 10px;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.18;
@@ -222,6 +260,7 @@ background: #2F303A;
 
 }
 .addres-page {
+    margin-top: 20px;
 font-style: normal;
  font-size: 14px;
 line-height: 1.71;
@@ -229,6 +268,7 @@ letter-spacing: 0.03em;
 color:var(--background-color)
 }
 .addres-link {
+    padding: 9px;
  font-style: normal;
 font-size: 14px;
 line-height: 1.71;
@@ -251,7 +291,7 @@ color: var(--background-color);
 background-color: var(--link-buttom-color);
 }
 .filtr-btn{
-    font-family: 'Roboto', sans-serif; 
+font-family: 'Roboto', sans-serif; 
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
@@ -259,25 +299,43 @@ letter-spacing: 0.03em;
 color: #212121;
 cursor: pointer;
 }
+.btn:not(:first-child){
+    margin-left: 8px;
+}
 /*---------------Галерея--------------------*/
 
-
+.filtr-list{
+    display: flex;
+    justify-content: center;
+}
 .portfolio {
+color: transparent;
 }
-.portfolio-list {
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
 }
-.list {
+.box-card{
+    flex-basis: calc(100% / 3 - 30px);
 }
-.portfolio-item {
+.portfolio-item{
+  border: 1px solid #000000;
+ 
+}
+
+.card-content{
+    padding: 20px 24px;
 }
 .portfolio-title {
-    font-weight: 700;
+font-weight: 700;
 font-size: 18px;
 line-height: 2.00;
 letter-spacing: 0.06em;
 color: var(--title-text)
 }
 .portfolio-text {
+    margin-top: 4px;
 font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.03em;
