@@ -31,21 +31,22 @@ img{
 button{
     cursor: pointer;
 }
-div{
-    margin: 0;
-}
+
+
 .container{
-    margin: 0 auto;
+   margin: 0 auto;
     width: 1200px ;
     padding-left: 15px;
     padding-right: 15px;
-   
+
     outline: 1px solid red;
 }
+
 .section{
+    display: block;
     padding-top: 94px;
-    padding-bottom: 94px;
 }
+
 
 /*-----------------------Header--------------------------------*/
 
@@ -119,27 +120,30 @@ color: var(--text-secondary)
     align-items: center;
 }
 /*-----------------------Main----------------------------------*/
+.hero { 
+}
 .section-hero {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    
     background-color:#2F303A;
-  
+    text-align: center;
 }
 .hero-title {
-    
+    margin: 0 auto;
+    display: block;
+max-width: 696px;
 font-weight: 900;
 font-size: 44px;
-max-width: 696px;
 line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
+
 color: var(--background-color);
 }
 
 .hero-btn {
+ 
+
 
 font-weight: 700;
 font-size: 16px;
@@ -155,18 +159,20 @@ cursor: pointer;
 .benefits {
    
 }
-.benefits-title {
-    color: transparent;
-}
+
 .benefits-list {
     display: flex;
     
 }
+.benefits-item{
+max-width: 270px;
+}
+
 .benefits-item + .benefits-item {
 margin-left: var(--side-distance);
 }
 .benefits-caption {
-max-width: 270px;
+
 padding-bottom: 10px;
 font-weight: 700;
 font-size: 14px;
@@ -180,8 +186,6 @@ color: var(--title-text)
     font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
-/* or 171% */
-
 letter-spacing: 0.03em;
 
 color: #757575;
@@ -215,7 +219,6 @@ color: var(--title-text)
     padding: 30px;
 }
 .comand-title {
-    padding-top: var(--top-distance);
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
@@ -226,9 +229,9 @@ color: var(--title-text)
 }
 .comand-list {
     display: flex;
-    justify-content: space-between;
+   gap: 30px;
     padding-top: 50px;
-    padding-bottom: 94px;
+    padding-bottom: var(--top-distance);
 }
 .comand-item {
 
@@ -274,7 +277,7 @@ letter-spacing: 0.03em;
 color:var(--background-color)
 }
 .addres-link {
-    padding: 9px;
+ margin-top: 9px;
  font-style: normal;
 font-size: 14px;
 line-height: 1.71;
@@ -288,6 +291,10 @@ color: rgba(255, 255, 255, 0.6);
 /*-----------------------------------------------*/
 
 /*-----------------------Main----------------------------------*/
+
+.head{
+ box-shadow:0 1px #ECECEC; ;
+}
 .filtr-btn:focus{
 color: var(--background-color);
 background-color: var(--link-buttom-color);
@@ -305,29 +312,30 @@ letter-spacing: 0.03em;
 color: #212121;
 cursor: pointer;
 }
-.btn:not(:first-child){
-    margin-left: 8px;
+.btn{
+    padding: 20px 8px;
 }
 /*---------------Галерея--------------------*/
-
+.portfolio-box{
+    
+}
 .filtr-list{
     display: flex;
     justify-content: center;
 }
-.portfolio {
-color: transparent;
-}
+
 .portfolio-list{
+    
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 30px;
+    
 }
 .box-card{
-    flex-basis: calc(100% / 3 - 30px);
+    width: calc(( 100% - 60px) / 3 );
 }
 .portfolio-item{
   border: 1px solid #000000;
- 
 }
 .portfolio-title {
 font-weight: 700;
