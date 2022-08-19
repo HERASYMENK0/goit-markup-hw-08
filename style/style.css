@@ -39,7 +39,6 @@ button{
     padding-left: 15px;
     padding-right: 15px;
 
-    outline: 1px solid red;
 }
 
 .section{
@@ -121,8 +120,14 @@ color: var(--text-secondary)
 }
 /*-----------------------Main----------------------------------*/
 .hero { 
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .section-hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+   
     
     background-color:#2F303A;
     text-align: center;
@@ -199,7 +204,7 @@ font-size: 36px;
 line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
-
+margin-bottom: 50px;
 color: var(--title-text)
 }
 .gellery-list {
@@ -208,9 +213,11 @@ color: var(--title-text)
 
 }
 .gellery-item{
-    padding-top: 50px ;
 }
 /*--------------наша команда---------*/
+.comand{
+    
+}
 .card-content{
     padding: 20px 24px;
 }
@@ -224,14 +231,12 @@ font-size: 36px;
 line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
-
+margin-bottom: 50px;
 color: var(--title-text)
 }
 .comand-list {
     display: flex;
-   gap: 30px;
-    padding-top: 50px;
-    padding-bottom: var(--top-distance);
+    gap: 30px;
 }
 .comand-item {
 
@@ -260,7 +265,13 @@ color: var(--text-secondary)
 
 /*-----------------------Footer---------------------------------*/
 .footer{
-background: #2F303A;
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 60px;
+    padding-bottom: 50px;
+ background: #2F303A;
+ margin-top: var(--top-distance);
 }
 .logo-footer{
     color:var(--background-color)
@@ -311,8 +322,10 @@ line-height: 1.62;
 letter-spacing: 0.03em;
 color: #212121;
 cursor: pointer;
+
 }
 .btn{
+    
     padding: 20px 8px;
 }
 /*---------------Галерея--------------------*/
@@ -322,14 +335,13 @@ cursor: pointer;
 .filtr-list{
     display: flex;
     justify-content: center;
+    margin-bottom: var(--side-distance);
 }
 
 .portfolio-list{
-    
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    
 }
 .box-card{
     width: calc(( 100% - 60px) / 3 );
