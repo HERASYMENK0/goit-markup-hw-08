@@ -38,12 +38,13 @@ button{
     width: 1200px ;
     padding-left: 15px;
     padding-right: 15px;
-
+outline: 1px solid red;
 }
 
 .section{
     display: block;
-    padding-top: 94px;
+    padding-top: var(--top-distance);
+    padding-bottom: var(--top-distance);
 }
 
 
@@ -119,22 +120,16 @@ color: var(--text-secondary)
     align-items: center;
 }
 /*-----------------------Main----------------------------------*/
-.hero { 
-    width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .section-hero {
     padding-top: 200px;
     padding-bottom: 200px;
-   
-    
     background-color:#2F303A;
     text-align: center;
 }
 .hero-title {
-    margin: 0 auto;
-    display: block;
+margin: 0 auto;
+display: block;
 max-width: 696px;
 font-weight: 900;
 font-size: 44px;
@@ -147,9 +142,9 @@ color: var(--background-color);
 }
 
 .hero-btn {
- 
-
-
+    margin-top: var(--side-distance);
+    width: 200px;
+height: 50px;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.88;
@@ -162,7 +157,7 @@ cursor: pointer;
 }
 /*---------------особенности----------*/
 .benefits {
-   
+   padding-bottom: 0;
 }
 
 .benefits-list {
@@ -197,6 +192,7 @@ color: #757575;
 }
 /*---------галерея-----------*/
 .gallery {
+    
 }
 .gellery-title {
 font-weight: 700;
@@ -271,7 +267,6 @@ color: var(--text-secondary)
     padding-top: 60px;
     padding-bottom: 50px;
  background: #2F303A;
- margin-top: var(--top-distance);
 }
 .logo-footer{
     color:var(--background-color)
@@ -287,8 +282,12 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color:var(--background-color)
 }
+.addres-link{
+    display: block;
+    margin-top: 9px;
+}
+
 .addres-link {
- margin-top: 9px;
  font-style: normal;
 font-size: 14px;
 line-height: 1.71;
@@ -322,11 +321,10 @@ line-height: 1.62;
 letter-spacing: 0.03em;
 color: #212121;
 cursor: pointer;
-
+ padding: 6px 22px;
 }
-.btn{
-    
-    padding: 20px 8px;
+.btn:not(:first-child){
+    margin-left: 8px;
 }
 /*---------------Галерея--------------------*/
 .portfolio-box{
@@ -335,7 +333,7 @@ cursor: pointer;
 .filtr-list{
     display: flex;
     justify-content: center;
-    margin-bottom: var(--side-distance);
+    margin-bottom: 50px;
 }
 
 .portfolio-list{
@@ -346,8 +344,9 @@ cursor: pointer;
 .box-card{
     width: calc(( 100% - 60px) / 3 );
 }
-.portfolio-item{
-  border: 1px solid #000000;
+.card-content{
+background: #FFFFFF;
+border: 1px solid #EEEEEE;
 }
 .portfolio-title {
 font-weight: 700;
