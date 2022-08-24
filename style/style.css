@@ -127,6 +127,18 @@ color: var(--text-secondary)
     background-color:#2F303A;
     text-align: center;
 }
+.section-hero{
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+   background-image:
+   linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+     url(../images/hero-img.jpg);
+    
+}
 .hero-title {
 margin: 0 auto;
 display: block;
