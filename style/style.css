@@ -50,6 +50,12 @@ button{
 
 /*-----------------------Header--------------------------------*/
 
+.addres-icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+
 .logo-text{
 color: #000000;
 
@@ -63,10 +69,18 @@ text-decoration: none;
 letter-spacing: 0.03em;
 color: var(--link-buttom-color)
 }
-.header-contact :focus{
+.header-mail,.header-tell{
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+
+color: var(--text-secondary)
+}
+.contact-item :focus{
    color: var(--link-buttom-color);
 }
-.header-contact :hover{
+.contact-item :hover{
     color: var(--link-buttom-color);
 }
 .header-link:hover{
@@ -88,24 +102,19 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--title-text)
 }
-.header-mail,.header-tell{
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
 
-color: var(--text-secondary)
-}
 .header-list{
     display: flex;
 }
 .header-contact{
     display: flex;
-    margin-left: 340px;
+    margin-left: 318px;
 }
-.item-nav + .item-nav, .contact-item +.contact-item{
-    margin-left: var(--side-distance);
-    
+.item-nav + .item-nav{
+    margin-left: 50px;
+}
+ .contact-item +.contact-item{
+    margin-left: 30px;
 }
 .header-nav{
     margin-left: 93px;
@@ -118,6 +127,13 @@ color: var(--text-secondary)
 .main-nav{
     display: flex;
     align-items: center;
+    
+}
+.header{
+    border-bottom: 1px solid #ECECEC;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 /*-----------------------Main----------------------------------*/
 
@@ -168,6 +184,19 @@ border-radius: 4px;
 cursor: pointer;
 }
 /*---------------особенности----------*/
+.icon-box{
+    display: flex;
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    background: #F5F4FA;
+border-radius: 4px;
+    
+}
+.icon-benefits{
+    margin: 0;
+    padding: 0;
+}
 .benefits {
    padding-bottom: 0;
 }
@@ -184,7 +213,7 @@ max-width: 270px;
 margin-left: var(--side-distance);
 }
 .benefits-caption {
-
+margin-top: 30px;
 padding-bottom: 10px;
 font-weight: 700;
 font-size: 14px;
@@ -203,9 +232,7 @@ letter-spacing: 0.03em;
 color: #757575;
 }
 /*---------галерея-----------*/
-.gallery {
-    
-}
+
 .gellery-title {
 font-weight: 700;
 font-size: 36px;
@@ -220,12 +247,17 @@ color: var(--title-text)
     justify-content: space-between;
 
 }
-.gellery-item{
-}
+
 /*--------------наша команда---------*/
 .comand{
+    background-color: #F5F4FA;
+max-width: 1600px;
+margin: 0 auto;
+}
+.comand-soc-link{
     
 }
+
 .card-content{
     padding: 20px 24px;
 }
@@ -246,9 +278,7 @@ color: var(--title-text)
     display: flex;
     gap: 30px;
 }
-.comand-item {
 
-}
 .comand-name {
     margin: 10px;
 font-weight: 500;
@@ -283,9 +313,7 @@ color: var(--text-secondary)
 .logo-footer{
     color:var(--background-color)
 }
-.addres {
 
-}
 .addres-page {
     margin-top: 20px;
 font-style: normal;
@@ -314,9 +342,6 @@ color: rgba(255, 255, 255, 0.6);
 
 /*-----------------------Main----------------------------------*/
 
-.head{
- box-shadow:0 1px #ECECEC; ;
-}
 .filtr-btn:focus{
 color: var(--background-color);
 background-color: var(--link-buttom-color);
@@ -339,9 +364,7 @@ cursor: pointer;
     margin-left: 8px;
 }
 /*---------------Галерея--------------------*/
-.portfolio-box{
-    
-}
+
 .filtr-list{
     display: flex;
     justify-content: center;
