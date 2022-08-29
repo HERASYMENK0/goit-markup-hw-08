@@ -277,6 +277,9 @@ cursor: pointer;
     fill: #FFFFFF;
     background-color: var(--link-buttom-color);
 }
+.comand-soc-item :focus{
+    fill: #FFFFFF;
+    background-color: var(--link-buttom-color);}
 
 .comand-soc-icon {
    width: 20px;
@@ -337,8 +340,7 @@ margin-bottom: 16px;
 .clients {
    
 }
-.container {
-}
+
 .client-title {
     font-weight: 700;
 font-size: 36px;
@@ -370,12 +372,13 @@ gap: 30px;
     fill: #AFB1B8 ;
 }
     
-
-.client-icon-box:hover{
+.client-icon-box:hover,
+.client-icon-box:focus{
     fill: var(--link-buttom-color);
     border: 1px solid var(--link-buttom-color);
-
+     background-color: #fff;
 }
+
 /*-----------------------Footer---------------------------------*/
 .footer-container{
     
@@ -387,7 +390,7 @@ gap: 30px;
 max-width: 1200px;
 }
 .footer{
-    
+    padding-left: 215px;
     width: 1600px;
     margin-right: auto;
     margin-left: auto;
@@ -438,7 +441,7 @@ margin-bottom: 20px;
     display: flex;
     gap: 10px;
 }
-.footer-soc-item {
+.footer-soc-link {
 display: flex;
 justify-content: center;
 align-items: center;
@@ -448,9 +451,11 @@ align-items: center;
    background-color:
    rgba(255, 255, 255, 0.1);
 }
-.footer-soc-item:hover {
+ .footer-soc-link:hover,
+ .footer-soc-link:focus {
    background-color: var(--link-buttom-color)
 }
+  
 .footer-icon {
     width: 20px;
     height: 20px;
@@ -462,15 +467,12 @@ align-items: center;
 /*-----------------------------------------------*/
 
 /*-----------------------Main----------------------------------*/
-
+.filtr-btn:hover,
 .filtr-btn:focus{
 color: var(--background-color);
 background-color: var(--link-buttom-color);
 }
-.filtr-btn:hover{
-color: var(--background-color);
-background-color: var(--link-buttom-color);
-}
+
 .filtr-btn{
 font-family: 'Roboto', sans-serif; 
 font-weight: 500;
@@ -503,6 +505,15 @@ cursor: pointer;
 .card-content{
 background: #FFFFFF;
 border: 1px solid #EEEEEE;
+}
+.portfolio-link{
+    display: block;
+   
+}
+.portfolio-link:hover{
+    background: #FFFFFF;
+border: 1px solid #EEEEEE transparent;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16) ;
 }
 .portfolio-title {
 font-weight: 700;
