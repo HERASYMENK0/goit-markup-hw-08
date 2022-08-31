@@ -129,9 +129,9 @@ color: var(--title-text)
     align-items: center;
     
 }
-.header{
+.header-portfolio{
     border-bottom: 1px solid #ECECEC;
-    max-width: 1600px;
+    
     margin-left: auto;
     margin-right: auto;
 }
@@ -182,6 +182,7 @@ background: #2196F3;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 cursor: pointer;
+letter-spacing: 0.06em;
 }
 /*---------------особенности----------*/
 .icon-box{
@@ -251,42 +252,38 @@ color: var(--title-text)
 /*--------------наша команда---------*/
 .comand{
     background-color: #F5F4FA;
-max-width: 1600px;
+
 margin: 0 auto;
 }
-
-.comand-soc {
+.comand-soc{
     display: flex;
-    justify-content:center;
-    fill: #757575;
     gap: 10px;
-   
 }
-
-.comand-soc-item {
+.comand-soc-icon {
+  width: 20px;
+    height: 20px;
+}
+.comand-soc-link{ 
     display: flex;
     justify-content: center;
     align-items: center;
+       fill:  #AFB1B8;
+    cursor: pointer;
+   
     border-radius: 50%;
-    width: 44px;
- height: 44px;
-cursor: pointer;
+     width: 44px;
+    height: 44px;
 }
-
-.comand-soc-item:hover {
+.comand-soc-item :hover {
     fill: #FFFFFF;
     background-color: var(--link-buttom-color);
 }
 .comand-soc-item :focus{
+     outline: 0;
     fill: #FFFFFF;
     background-color: var(--link-buttom-color);}
 
-.comand-soc-icon {
-   width: 20px;
-   height: 20px;
-  
 
-}
 .card-content{
     padding: 20px 24px;
 }
@@ -337,9 +334,6 @@ color: var(--text-secondary);
 margin-bottom: 16px;
 }
 /*------------------- Постійні Клієнти------------------*/
-.clients {
-   
-}
 
 .client-title {
     font-weight: 700;
@@ -357,26 +351,29 @@ gap: 30px;
 }
 
 .client-icon {
-  
-    
+  width: 170px;
+    height: 92px;
+     
 }
-.client-icon-box{
-      display: flex;
+.client-link{
+    display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #AFB1B8;
      border-radius: 4px;
-     width: 170px;
-    height: 92px;
+    
     cursor: pointer;
     fill: #AFB1B8 ;
 }
     
-.client-icon-box:hover,
-.client-icon-box:focus{
-    fill: var(--link-buttom-color);
+.client-link:hover{
+      fill: var(--link-buttom-color);
     border: 1px solid var(--link-buttom-color);
-     background-color: #fff;
+}
+.client-link:focus{
+    fill:  #2196F3; ;
+    border: 1px solid var(--link-buttom-color);
+    outline: none;
 }
 
 /*-----------------------Footer---------------------------------*/
@@ -387,13 +384,14 @@ gap: 30px;
     padding-right: 15px;
 }
 .footer-box{
-max-width: 1200px;
+    display: flex;
+    margin: 0auto;
+    padding: 0auto;
+    width: 1200px;
 }
 .footer{
-    padding-left: 215px;
-    width: 1600px;
-    margin-right: auto;
-    margin-left: auto;
+    display: flex;
+justify-content: center;
     padding-top: 60px;
     padding-bottom: 50px;
  background: #2F303A;
@@ -453,7 +451,8 @@ align-items: center;
 }
  .footer-soc-link:hover,
  .footer-soc-link:focus {
-   background-color: var(--link-buttom-color)
+   background-color: var(--link-buttom-color);
+   outline: none;
 }
   
 .footer-icon {
@@ -471,6 +470,9 @@ align-items: center;
 .filtr-btn:focus{
 color: var(--background-color);
 background-color: var(--link-buttom-color);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+
 }
 
 .filtr-btn{
@@ -482,8 +484,12 @@ letter-spacing: 0.03em;
 color: #212121;
 cursor: pointer;
  padding: 6px 22px;
+ background: #F5F4FA;
+border-radius: 4px;
+
 }
 .btn:not(:first-child){
+    
     margin-left: 8px;
 }
 /*---------------Галерея--------------------*/
@@ -492,6 +498,7 @@ cursor: pointer;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    
 }
 
 .portfolio-list{
