@@ -351,8 +351,8 @@ gap: 30px;
 }
 
 .client-icon {
-  width: 170px;
-    height: 92px;
+ width: 106px;
+ height: 60px;
      
 }
 .client-link{
@@ -361,7 +361,8 @@ gap: 30px;
     align-items: center;
     border: 1px solid #AFB1B8;
      border-radius: 4px;
-    
+     width: 170px;
+    height: 92px;
     cursor: pointer;
     fill: #AFB1B8 ;
 }
