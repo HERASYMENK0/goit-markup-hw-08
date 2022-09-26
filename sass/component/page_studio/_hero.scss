@@ -1,4 +1,4 @@
-.section-hero {
+.hero__section {
   max-width: 1600px;
   height: 600px;
   padding-top: 200px;
@@ -10,7 +10,7 @@
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-img.jpg);
 }
-.hero-title {
+.hero__title {
   margin: 0 auto;
   display: block;
   max-width: 696px;
@@ -23,7 +23,7 @@
   color: var(--background-color);
 }
 
-.hero-btn {
+.hero__btn {
   margin-top: var(--side-distance);
   width: 200px;
   height: 50px;

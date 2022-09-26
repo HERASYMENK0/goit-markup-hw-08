@@ -2,15 +2,15 @@
 background-color: #F5F4FA;
 margin: 0 auto;
 }
-.comand-soc{
+.comand__soc{
     display: flex;
     gap: 10px;  
 }
-.comand-soc-icon {
+.comand-soc__icon {
   width: 20px;
  height: 20px;  
 }
-.comand-soc-link{ 
+.comand-soc__link{ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,28 +28,28 @@ margin: 0 auto;
     fill: #FFFFFF;
     background-color: var(--link-buttom-color);}
 }
-.comand-soc-item :hover {
+.comand-soc__item :hover {
     fill: #FFFFFF;
     background-color: var(--link-buttom-color);
 }
-.comand-soc-item :focus{
+.comand-soc__item :focus{
      outline: 0;
     fill: #FFFFFF;
     background-color: var(--link-buttom-color);}
-.comand-soc-icon{
+.comand-soc__icon{
 transition: background-color  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-content{
     padding: 20px 24px;
 }
-.comand-card{
+.comand__card{
     text-align: center;
     padding: 30px;  
 background: #FFFFFF;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 }
-.comand-title {
+.comand__title {
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
@@ -58,11 +58,11 @@ letter-spacing: 0.03em;
 margin-bottom: 50px;
 color: var(--title-text)
 }
-.comand-list {
+.comand__list {
     display: flex;
     gap: 30px;
 }
-.comand-name {
+.comand__name {
     margin: 10px;
 font-weight: 500;
 font-size: 16px;
@@ -70,7 +70,7 @@ line-height: 1.18;
 letter-spacing: 0.03em;
 color: var(--title-text)
 }
-.comand-text {
+.comand__text {
     font-weight: 400;
 font-size: 16px;
 line-height: 1.18;

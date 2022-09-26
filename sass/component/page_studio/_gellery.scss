@@ -1,5 +1,5 @@
 
-.gellery-title {
+.gellery__title {
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
@@ -8,15 +8,15 @@ letter-spacing: 0.03em;
 margin-bottom: 50px;
 color: var(--title-text)
 }
-.gellery-list {
+.gellery__list {
 display: flex;
 justify-content: space-between;
 }
-.gellery-item{
+.gellery__item{
  display: block;
 position: relative;
 }
-.gellery-text{
+.gellery__text{
  bottom: 0;
  position: absolute;
 width: 370px;
