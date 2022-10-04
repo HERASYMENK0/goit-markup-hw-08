@@ -15,7 +15,13 @@ body {
   --top-distance: 94px;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -182,7 +188,7 @@ button {
   margin-right: auto;
 }
 
-.hero__section {
+.hero {
   max-width: 1600px;
   height: 600px;
   padding-top: 200px;
@@ -196,12 +202,12 @@ button {
 }
 
 .hero__title {
-  margin: 0 auto;
   display: block;
   max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  margin: 0 auto;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -225,7 +231,7 @@ button {
   border: none;
 }
 
-.benefits-icon__box {
+.benefits__icon-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,7 +328,7 @@ button {
 }
 
 .comand {
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   margin: 0 auto;
 }
 
@@ -348,7 +354,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  fill: #AFB1B8;
+  fill: #afb1b8;
   cursor: pointer;
   border-radius: 50%;
   width: 44px;
@@ -357,23 +363,23 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .comand-soc__link:hover {
-  fill: #FFFFFF;
+  fill: #ffffff;
   background-color: var(--link-buttom-color);
 }
 .comand-soc__link:focus {
   outline: 0;
-  fill: #FFFFFF;
+  fill: #ffffff;
   background-color: var(--link-buttom-color);
 }
 
 .comand-soc__item :hover {
-  fill: #FFFFFF;
+  fill: #ffffff;
   background-color: var(--link-buttom-color);
 }
 
 .comand-soc__item :focus {
   outline: 0;
-  fill: #FFFFFF;
+  fill: #ffffff;
   background-color: var(--link-buttom-color);
 }
 
@@ -389,7 +395,7 @@ button {
 .comand__card {
   text-align: center;
   padding: 30px;
-  background: #FFFFFF;
+  background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -450,6 +456,10 @@ button {
   gap: 30px;
 }
 
+.client__item {
+  display: inline-block;
+}
+
 .client__icon {
   width: 106px;
   height: 60px;
@@ -467,21 +477,17 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 170px;
   height: 92px;
   cursor: pointer;
-  fill: #AFB1B8;
+  fill: #afb1b8;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.client__link:hover {
+.client__link:hover, .client__link:focus {
   fill: var(--link-buttom-color);
-  border: 1px solid var(--link-buttom-color);
-}
-.client__link:focus {
-  fill: #2196F3;
   border: 1px solid var(--link-buttom-color);
   outline: none;
 }
@@ -489,7 +495,7 @@ button {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background: #2F303A;
+  background: #2f303a;
 }
 
 .footer-box {
@@ -543,7 +549,7 @@ button {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -579,7 +585,7 @@ button {
 .footer-icon {
   width: 20px;
   height: 20px;
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .footer-subscription {
@@ -603,7 +609,7 @@ button {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer-form-input {
@@ -645,12 +651,12 @@ button {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
-  background: #2196F3;
+  color: #ffffff;
+  background: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border: 1px solid #2196F3;
+  border: 1px solid #2196f3;
 }
 
 .filtr-btn {
@@ -704,16 +710,16 @@ button {
 }
 
 .card-content {
-  background: #FFFFFF;
-  border: 1px solid #EEEEEE;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
 }
 
 .portfolio-link {
   display: block;
 }
-.portfolio-link:hover {
-  background: #FFFFFF;
-  border: 1px solid #EEEEEE transparent;
+.portfolio-link:hover, .portfolio-link:focus {
+  background: #ffffff;
+  border: 1px solid #eeeeee transparent;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -731,7 +737,7 @@ button {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 63px 24px;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);

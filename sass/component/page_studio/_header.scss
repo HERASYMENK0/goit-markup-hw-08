@@ -67,9 +67,9 @@
 }
 .navigation__item {
   position: relative;
-  &+&{
-  margin-left: 50px;
-}
+  & + & {
+    margin-left: 50px;
+  }
 }
 .line::after {
   position: absolute;
