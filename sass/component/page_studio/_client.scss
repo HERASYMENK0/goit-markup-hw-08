@@ -1,3 +1,8 @@
+.client {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
 .client__title {
   font-weight: 700;
   font-size: 36px;
@@ -6,11 +11,6 @@
   letter-spacing: 0.03em;
   margin-bottom: 50px;
   color: #212121;
-}
-.client__list {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
 }
 .client__item {
   display: inline-block;
