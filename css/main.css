@@ -99,17 +99,29 @@ button {
   margin-right: 10px;
 }
 
+.header.section {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .logo {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
   text-decoration: none;
   letter-spacing: 0.03em;
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: var(--link-buttom-color);
 }
 .logo-text {
   color: #000000;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+  }
 }
 
 .header-contact__mail,
@@ -150,27 +162,28 @@ button {
 }
 
 .navigation__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
 }
 
 .header-contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 318px;
-}
-
-.navigation {
-  margin-left: 93px;
+  display: none;
 }
 
 .navigation__item,
 .header-contact__item {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (min-width: 1200px) {
+  .navigation__item,
+.header-contact__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .navigation__item {
@@ -199,6 +212,9 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header-portfolio {
@@ -207,16 +223,35 @@ button {
   margin-right: auto;
 }
 
+@media screen and (max-width: 767px) {
+  .mobile__btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #fff;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile__btn {
+    display: none;
+  }
+}
 .hero {
   max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: #2f303a;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-img.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {
@@ -1066,7 +1101,7 @@ x .comand__name {
   top: 8px;
   right: 8px;
   border-radius: 50%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .modal-btn:hover {
@@ -1081,13 +1116,13 @@ x .comand__name {
   width: 200px;
   height: 50px;
   letter-spacing: 0.06em;
-  background: #2196F3;
+  background: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
-  border: #2196F3;
+  border: #2196f3;
   margin: 0 auto;
 }
 
@@ -1276,7 +1311,7 @@ label {
 }
 
 .check-modal:checked + .checkbox-title .check-icon {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .checkbox-link {
@@ -1286,5 +1321,5 @@ label {
   letter-spacing: 0.03em;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  color: #2196F3;
+  color: #2196f3;
 }/*# sourceMappingURL=main.css.map */
