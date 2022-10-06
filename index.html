@@ -21,6 +21,7 @@
     <title>WebStudio</title>
   </head>
   <body>
+
     <header class="header section">
       <div class="container main-nav">
         <a href="#" class="logo">Web<span class="logo-text">Studio</span></a>
@@ -35,28 +36,28 @@
             </li>
             <li class="navigation__item"><a href="" class="navigation__link link">Контакти</a></li>
           </ul>
-          <button type="button" class="mobile__btn">
-            <svg class="mobile__icon" width="24" height="16">
-              <use href="./images/logo/icons.svg.svg#icon-mobilemenu"></use>
-            </svg>
-          </button>
         </nav>
+        
         <ul class="header-contact list">
           <li class="header-contact__item">
-            <a href="Mailto:info@devstudio.com" class="header-contact__mail link"
+            <a href="Mailto:info@devstudio.com" class="header-contact__link link"
               ><svg class="header-contact__icon" width="16px" height="12px">
-                <use href="./images/logo/icons.svg.svg#icon-envelope"></use></svg
-              >info@devstudio.com</a
-            >
+                <use href="./images/logo/icons.svg.svg#icon-envelope"></use></svg>info@devstudio.com</a>
           </li>
           <li class="header-contact__item">
-            <a href="Tel:+380961111111" class="header-contact__tell link"
+            <a href="Tel:+380961111111" class="header-contact__link link"
               ><svg class="header-contact__icon" width="10px" height="16px">
-                <use href="./images/logo/icons.svg.svg#icon-smartphone"></use></svg
-              >+38 096 111 11 11</a
+                <use href="./images/logo/icons.svg.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a
             >
           </li>
         </ul>
+         <button class="mobile__btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu" type="button" >
+            <svg class="mobile__icon" width="40" height="40">
+              <use href="./images/logo/icons.svg.svg#icon-menu"></use>
+            </svg>
+          </button>
       </div>
     </header>
     <main>
@@ -161,26 +162,22 @@
                   <li class="social__item">
                     <a href="" class="social__link link"
                       ><svg class="social__icon" width="20" height="20">
-                        <use href="./images/logo/icons.svg.svg#icon-instagram"></use></svg
-                    ></a>
+                        <use href="./images/logo/icons.svg.svg#icon-instagram"></use></svg></a>
                   </li>
                   <li class="social__item">
                     <a href="" class="social__link link"
                       ><svg class="social__icon" width="20" height="20">
-                        <use href="./images/logo/icons.svg.svg#icon-twitter-1"></use></svg
-                    ></a>
+                        <use href="./images/logo/icons.svg.svg#icon-twitter-1"></use></svg></a>
                   </li>
                   <li class="social__item">
                     <a href="" class="social__link link"
                       ><svg class="social__icon" width="20" height="20">
-                        <use href="./images/logo/icons.svg.svg#icon-facebook"></use></svg
-                    ></a>
+                        <use href="./images/logo/icons.svg.svg#icon-facebook"></use></svg></a>
                   </li>
                   <li class="social__item">
                     <a href="" class="social__link link"
                       ><svg class="social__icon" width="20" height="20">
-                        <use href="./images/logo/icons.svg.svg#icon-linkedin"></use></svg
-                    ></a>
+                        <use href="./images/logo/icons.svg.svg#icon-linkedin"></use></svg></a>
                   </li>
                 </ul>
               </div>
@@ -200,26 +197,22 @@
                   <li class="social__item">
                     <a href="" class="social__link link"
                       ><svg class="social__icon" width="20" height="20">
-                        <use href="./images/logo/icons.svg.svg#icon-instagram"></use></svg
-                    ></a>
+                        <use href="./images/logo/icons.svg.svg#icon-instagram"></use></svg></a>
                   </li>
                   <li class="social__item">
                     <a href="" class="social__link link"
                       ><svg class="social__icon" width="20" height="20">
-                        <use href="./images/logo/icons.svg.svg#icon-twitter-1"></use></svg
-                    ></a>
+                        <use href="./images/logo/icons.svg.svg#icon-twitter-1"></use></svg></a>
                   </li>
                   <li class="social__item">
                     <a href="" class="social__link link"
                       ><svg class="social__icon" width="20" height="20">
-                        <use href="./images/logo/icons.svg.svg#icon-facebook"></use></svg
-                    ></a>
+                        <use href="./images/logo/icons.svg.svg#icon-facebook"></use></svg></a>
                   </li>
                   <li class="social__item">
                     <a href="" class="social__link link"
                       ><svg class="social__icon" width="20" height="20">
-                        <use href="./images/logo/icons.svg.svg#icon-linkedin"></use></svg
-                    ></a>
+                        <use href="./images/logo/icons.svg.svg#icon-linkedin"></use></svg></a>
                   </li>
                 </ul>
               </div>
@@ -475,11 +468,9 @@
             <label for="user-policy" class="checkbox-title">
               <span class=""
                 ><svg class="check-icon" width="16" hight="15">
-                  <use href="./images/logo/icons.svg.svg#icon-icon-check"></use></svg
-              ></span>
+                  <use href="./images/logo/icons.svg.svg#icon-icon-check"></use></svg></span>
               Погоджуюся з розсилкою та приймаю
-              <a href="" class="checkbox-link link">Умови договору</a></label
-            >
+              <a href="" class="checkbox-link link">Умови договору</a></label>
           </div>
           <div class="button-box">
             <button type="submit" class="modal-button">Відправити</button>
@@ -488,5 +479,34 @@
       </div>
     </div>
     <script src="./modal/modal.js"></script>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="mobile__btn-close js-close-menu">
+         <svg class="mobile__icon" width="40" height="40">
+              <use href="./images/logo/icons.svg.svg#icon-close"></use>
+            </svg></button>
+          <ul class="mobile-menu list">
+            <li class="mobile__link"><a href="./index.html" class="mobile__text link">Студія</a></li>
+            <li class="mobile__link"><a href="./portfolio.html" class="mobile__text link">Портфоліо</a></li>
+            <li class="mobile__link"><a href="" class="mobile__text link">Контакти</a></li>
+          </ul>
+          <ul class="mobile-contact list" >
+            <li class="mobile-contact__link"><a href=""class="mobile-contact__tell link">+38 096 111 11 11</a></li>
+            <li class="mobile-contact__link"><a href=""class="mobile-contact__mail link">info@devstudio.com</a></li>
+          </ul>
+          <ul class="mobile-soc list">
+            <li class="mobile-soc__link "><a href="" class="mobile-soc__text link">Instagram</a></li>
+            <li class="mobile-soc__link "><a href="" class="mobile-soc__text link">Twitter</a></li>
+            <li class="mobile-soc__link "><a href="" class="mobile-soc__text link">Facebook</a></li>
+            <li class="mobile-soc__link "><a href="" class="mobile-soc__text link">LinkedIn</a></li>
+          </ul>
+      
+    </div> -->
+     <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
