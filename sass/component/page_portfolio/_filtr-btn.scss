@@ -1,4 +1,5 @@
 
+
 .filtr-btn{
 font-family: 'Roboto', sans-serif; 
 font-weight: 500;
@@ -22,9 +23,50 @@ border-radius: 4px;
 .btn:not(:first-child){
     margin-left: 8px;
 }
+
+@media screen and(max-width: 350px) {
+    .filtr-btn{
+        padding: 6px 16px;
+    }
+}
+@media screen and(max-width: 450px) {
+.btn:nth-child(4){
+    margin-left: 0;
+}
+}
+
+
+@media screen and(max-width: 767px) {
+
+    
 .filtr-list{
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    margin-bottom: 40px;
+    // justify-content: center;
+    // margin-bottom: 50px;
     
+}
+}
+// @media screen and(min-width: 415px) and(max-width: 767px){
+//  .btn:nth-child(3){
+//     margin-right: 60px;
+// }
+// }
+
+
+@media screen and(min-width: 768px) {
+.filtr-list{
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+}
+@media screen and(min-width: 1200px) {
+.filtr-list{
+
+    margin-bottom: 50px;
+}
 }

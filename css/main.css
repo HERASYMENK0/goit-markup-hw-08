@@ -1011,29 +1011,88 @@ x .comand__name {
   margin-left: 8px;
 }
 
-.filtr-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+@media screen and (max-width: 350px) {
+  .filtr-btn {
+    padding: 6px 16px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .btn:nth-child(4) {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .filtr-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 15px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filtr-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filtr-list {
+    margin-bottom: 50px;
+  }
+}
+.header-portfolio.section {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .portfolio-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   gap: 30px;
 }
-
-.box-card {
-  width: calc((100% - 60px) / 3);
+@media screen and (max-width: 767px) {
+  .portfolio-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
+@media screen and (min-width: 768px) {
+  .box-card {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .box-card {
+    width: calc((100% - 60px) / 3);
+  }
+}
 .card-content {
   background: #ffffff;
   border: 1px solid #eeeeee;
@@ -1490,13 +1549,7 @@ label {
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 450px;
-  gap: 5px;
   margin-top: 64px;
-}
-@media screen and (min-width: 375px) {
-  .mobile-soc {
-    gap: 20px;
-  }
 }
 
 .mobile-soc__text {
@@ -1505,4 +1558,13 @@ label {
   /* identical to box height, or 122% */
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+
+.mobile-soc__link {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.mobile-soc__link:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }/*# sourceMappingURL=main.css.map */

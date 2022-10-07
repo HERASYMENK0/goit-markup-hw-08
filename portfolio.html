@@ -14,7 +14,7 @@
 </head>
 <body>
     
-   <header class="header-portfolio ">
+   <header class="header-portfolio section">
       
       <div class="container main-nav">
         <a href="#" class="logo">Web<span class="logo-text">Studio</span></a>
@@ -28,11 +28,18 @@
       <ul class="header-contact list" >
         
         <li class="header-contact__item ">
-          <a  href="Mailto:info@devstudio.com" class="header-contact__mail link"><svg class="header-contact__icon"  width="16px" height="12px" ><use href="./images/logo/icons.svg.svg#icon-envelope"></use></svg>info@devstudio.com</a>
+          <a  href="Mailto:info@devstudio.com" class="header-contact__link link"><svg class="header-contact__icon"  width="16px" height="12px" ><use href="./images/logo/icons.svg.svg#icon-envelope"></use></svg>info@devstudio.com</a>
          </li>
         <li class="header-contact__item ">
-          <a href="Tel:+380961111111" class="header-contact__tell link"><svg class="header-contact__icon"  width="10px" height="16px" ><use href="./images/logo/icons.svg.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a></li>
+          <a href="Tel:+380961111111" class="header-contact__link link"><svg class="header-contact__icon"  width="10px" height="16px" ><use href="./images/logo/icons.svg.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a></li>
       </ul>
+      <button class="mobile__btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu" type="button" >
+            <svg class="mobile__icon" width="40" height="40">
+              <use href="./images/logo/icons.svg.svg#icon-menu"></use>
+            </svg>
+          </button>
       </div>
      
      
@@ -42,6 +49,7 @@
            <div class="container container-portfolio">
              <div>
           <ul class="filtr-list list">
+            
             <li class="btn"><button type="button" class="filtr-btn">Усі</button></li>
             <li class="btn"><button type="button" class="filtr-btn">Веб-сайти</button></li>
             <li class="btn"><button type="button" class="filtr-btn">Додатки</button></li>
@@ -188,6 +196,34 @@
       </div>
       </div>
     </footer>
-       
+       <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="mobile__btn-close js-close-menu">
+         <svg class="mobile__icon" width="40" height="40">
+              <use href="./images/logo/icons.svg.svg#icon-close"></use>
+            </svg></button>
+          <ul class="mobile-menu list">
+            <li class="mobile__link"><a href="./index.html" class="mobile__text link">Студія</a></li>
+            <li class="mobile__link"><a href="./portfolio.html" class="mobile__text link">Портфоліо</a></li>
+            <li class="mobile__link"><a href="" class="mobile__text link">Контакти</a></li>
+          </ul>
+          <ul class="mobile-contact list" >
+            <li class="mobile-contact__link"><a href=""class="mobile-contact__tell link">+38 096 111 11 11</a></li>
+            <li class="mobile-contact__link"><a href=""class="mobile-contact__mail link">info@devstudio.com</a></li>
+          </ul>
+          <ul class="mobile-soc list">
+            <li class="mobile-soc__link "><a href="" class="mobile-soc__text link">Instagram</a></li>
+            <li class="mobile-soc__link "><a href="" class="mobile-soc__text link">Twitter</a></li>
+            <li class="mobile-soc__link "><a href="" class="mobile-soc__text link">Facebook</a></li>
+            <li class="mobile-soc__link "><a href="" class="mobile-soc__text link">LinkedIn</a></li>
+          </ul>
+      
+    </div> -->
+     <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>
