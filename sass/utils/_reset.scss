@@ -31,33 +31,32 @@ button {
   // mobile-480px
   // tablet-768px
   // desktop-1200px
-  
+
   width: 100%;
- 
+
   margin-left: auto;
   margin-right: auto;
-  
+
   // tablet
-  @media screen and (min-width: 768px){
-max-width: 738px;
+  @media screen and (min-width: 768px) {
+    max-width: 738px;
   }
-  
+
   // desctop-stile
-  @media screen and (min-width: 1200px){
-max-width: 1170px; 
+  @media screen and (min-width: 1200px) {
+    max-width: 1170px;
   }
 }
 .section {
   display: block;
- padding-left: 15px;
+  padding-left: 15px;
   padding-right: 15px;
   padding-top: 60px;
   padding-bottom: 60px;
-   @media screen and (min-width: 1200px){
-  padding-top: var(--top-distance);
-  padding-bottom: var(--top-distance);
+  @media screen and (min-width: 1200px) {
+    padding-top: var(--top-distance);
+    padding-bottom: var(--top-distance);
   }
-
 }
 .visually-hidden {
   position: absolute;
