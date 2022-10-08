@@ -6,14 +6,16 @@
   padding: 20px 24px;
 }
 
-.comand__img{
-  max-width: 100%;
+.comand__img {
+  width: 100%;
   @media screen and (min-width: 768px) {
-max-width: 354px;
-}
-@media screen and (min-width: 1200px) {
-  max-width: 270px;
-}
+    width: 354px;
+    height: 374px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
+    height: 260px;
+  }
 }
 .comand__card {
   text-align: center;
@@ -46,19 +48,18 @@ max-width: 354px;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
-
   }
   @media screen and (min-width: 1200px) {
-  display: flex;
-  flex-direction: row;
-  
-  gap: 30px;}
+    display: flex;
+    flex-direction: row;
+
+    gap: 30px;
+  }
 }
-.comand__item{
+.comand__item {
   margin-bottom: 30px;
 }
-x
-.comand__name {
+x .comand__name {
   margin: 10px;
   font-weight: 500;
   font-size: 16px;

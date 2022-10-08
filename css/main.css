@@ -40,7 +40,6 @@ ul {
 
 img {
   display: block;
-  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -527,16 +526,18 @@ button {
 }
 
 .comand__img {
-  max-width: 100%;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .comand__img {
-    max-width: 354px;
+    width: 354px;
+    height: 374px;
   }
 }
 @media screen and (min-width: 1200px) {
   .comand__img {
     max-width: 270px;
+    height: 260px;
   }
 }
 
@@ -1173,8 +1174,13 @@ x .comand__name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   color: var(--title-text);
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-title {
+    letter-spacing: 0.06em;
+  }
 }
 
 .portfolio-text {
@@ -1183,6 +1189,22 @@ x .comand__name {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--text-secondary);
+}
+
+.portfolio-img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-img {
+    max-width: 354px;
+    height: 294px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-img {
+    max-width: 370px;
+    height: 294px;
+  }
 }
 
 .backdrop {

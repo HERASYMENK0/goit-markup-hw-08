@@ -69,8 +69,11 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   color: var(--title-text);
+  @media screen and (min-width: 1200px) {
+   letter-spacing: 0.06em;
+  }
 }
 .portfolio-text {
   margin-top: 4px;
@@ -78,4 +81,15 @@
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--text-secondary);
+}
+.portfolio-img{
+   width: 100%;
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+    height: 294px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 370px;
+    height: 294px;
+  }
 }
