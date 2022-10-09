@@ -50,24 +50,29 @@ button {
 
 .container {
   width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  outline: 1px solid red;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 738px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1170px;
+    width: 1200px;
   }
 }
 
 .section {
-  display: block;
-  padding-left: 15px;
-  padding-right: 15px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -353,10 +358,6 @@ button {
   border: none;
 }
 
-.benefits {
-  padding-bottom: 0;
-}
-
 @media screen and (min-width: 320px) {
   .benefits__list {
     display: -webkit-box;
@@ -400,25 +401,19 @@ button {
   }
 }
 
-.benefits__item {
-  max-width: 450px;
+.benefits__item :not(:last-child) {
   margin-bottom: 30px;
 }
-@media screen and (max-width: 767px) {
-  .benefits__item:last-child {
-    margin-bottom: 60px;
-  }
-}
 @media screen and (min-width: 768px) {
-  .benefits__item {
+  .benefits__item :not(:last-child) {
     max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .benefits__item {
+  .benefits__item :not(:last-child) {
     max-width: 270px;
   }
-  .benefits__item + .benefits__item {
+  .benefits__item :not(:last-child) + .benefits__item :not(:last-child) {
     margin-left: var(--side-distance);
   }
 }
@@ -454,7 +449,6 @@ button {
   text-transform: uppercase;
   text-align: center;
   margin-top: 30px;
-  padding-bottom: 10px;
   color: var(--title-text);
 }
 
@@ -464,6 +458,7 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -614,7 +609,7 @@ button {
   margin-bottom: 30px;
 }
 
-x .comand__name {
+.comand__name {
   margin: 10px;
   font-weight: 500;
   font-size: 16px;
