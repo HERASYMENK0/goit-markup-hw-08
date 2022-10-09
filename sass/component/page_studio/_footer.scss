@@ -4,30 +4,30 @@
   background: #2f303a;
 }
 .footer-box {
-  @media screen and(max-width:767px){
-  display: flex;
-  flex-direction: column;
+  @media screen and(max-width:767px) {
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
-  @media screen and(min-width:768px){
+  @media screen and(min-width:768px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
   @media screen and(min-width:1200px) {
     display: flex;
-     align-items: baseline;
+    align-items: baseline;
   }
- 
 }
 .footer-container {
-   @media screen and(max-width:1199px) {
-  text-align: center;
-  margin-bottom: 60px;
-}
+  @media screen and(max-width:1199px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
   @media screen and(min-width:1200px) {
     flex-grow: 1;
-}}
+  }
+}
 .logo-footer {
   color: var(--background-color);
 }
@@ -51,13 +51,12 @@
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-soc {
-  @media screen and(max-width:1199px){
-  
-  text-align: center;
-  margin-bottom: 60px;
+  @media screen and(max-width:1199px) {
+    text-align: center;
+    margin-bottom: 60px;
   }
-  @media screen and(min-width:1200px){
-  margin-left: 70px;
+  @media screen and(min-width:1200px) {
+    margin-left: 70px;
   }
 }
 .footer-title {
@@ -95,27 +94,26 @@
 }
 .footer-subscription {
   @media screen and(max-width:1199px) {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  // width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // width: 450px;
   }
 
   @media screen and(min-width:1200px) {
-      margin-left: 93px;
-
+    margin-left: 93px;
   }
 }
 .footer-form {
-  @media screen and(max-width:1199px){
-  display: flex;
-  flex-direction: column;
+  @media screen and(max-width:1199px) {
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
 
-@media screen and(min-width:1200px){
-  display: flex;
-}
+  @media screen and(min-width:1200px) {
+    display: flex;
+  }
 }
 .footer-form-text {
   display: block;

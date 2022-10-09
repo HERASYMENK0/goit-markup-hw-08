@@ -33,6 +33,8 @@ padding: 0;
   }
 }
 .mobile__icon{
+  width: 40px;
+  height: 40px;
   &:hover,
   &:focus{
   fill: var(--link-buttom-color);}

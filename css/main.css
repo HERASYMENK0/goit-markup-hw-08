@@ -432,6 +432,9 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #f5f4fa;
   border-radius: 4px;
 }
@@ -439,6 +442,8 @@ button {
 .benefits__icon {
   margin: 0;
   padding: 0;
+  width: 70px;
+  height: 70px;
 }
 
 .benefits__caption {
@@ -1445,6 +1450,8 @@ label {
 }
 
 .check-icon {
+  width: 16px;
+  height: 15px;
   fill: transparent;
 }
 
@@ -1491,6 +1498,10 @@ label {
   .mobile__btn {
     display: none;
   }
+}
+.mobile__icon {
+  width: 40px;
+  height: 40px;
 }
 .mobile__icon:hover, .mobile__icon:focus {
   fill: var(--link-buttom-color);
