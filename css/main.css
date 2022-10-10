@@ -54,7 +54,6 @@ button {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -816,6 +815,9 @@ button {
   }
 }
 
+.footer-container {
+  margin-bottom: 60px;
+}
 @media screen and (max-width: 1199px) {
   .footer-container {
     text-align: center;
@@ -912,11 +914,6 @@ button {
   fill: #ffffff;
 }
 
-@media screen and (min-width: 768px) {
-  .footer-subscription {
-    margin-top: 60px;
-  }
-}
 @media screen and (max-width: 1199px) {
   .footer-subscription {
     display: -webkit-box;
@@ -937,6 +934,9 @@ button {
   }
 }
 
+.footer-form {
+  width: 100%;
+}
 @media screen and (max-width: 1199px) {
   .footer-form {
     display: -webkit-box;
@@ -971,11 +971,6 @@ button {
 }
 
 .footer-form-input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  min-width: 280px;
   height: 50px;
   padding: 15px 16px;
   background-color: transparent;
@@ -1016,7 +1011,6 @@ button {
           align-items: center;
   width: 200px;
   height: 50px;
-  margin-left: 12px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -1027,6 +1021,11 @@ button {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 1px solid #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form-btn {
+    margin-left: 12px;
+  }
 }
 
 .filtr-btn {
