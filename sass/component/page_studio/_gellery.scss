@@ -15,6 +15,7 @@
 @media screen and (min-width: 1200px )
 { 
    
+
 .gellery__title {
 font-weight: 700;
 font-size: 36px;
@@ -22,6 +23,7 @@ line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
 margin-bottom: 50px;
+
 color: var(--title-text)
 }
 .gellery__list {
@@ -49,4 +51,8 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #ffffff;
 }
+}
+.section__gallery{
+  padding-top: 0;
+  padding-bottom: 0;
 }
