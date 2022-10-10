@@ -127,6 +127,9 @@ button {
 }
 
 .header-contact__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
